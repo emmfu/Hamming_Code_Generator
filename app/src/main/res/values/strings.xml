@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hamming_Code_Generator</string>
+    <string name="enter_your_source_word">Enter your source word.</string>
+    <string name="enter_only_1_s_and_0_s">Enter only 1\'s and 0\'s</string>
+    <string name="generated_hamming_code">Generated Hamming Code</string>
+    <string name="generate_code">Generate Code</string>
 </resources>
