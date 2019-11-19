@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.textView_HammingCode);
         final Context context = getApplicationContext();
 
+        // OnClick to generate code
         button.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View V) {
                 EditText editTextSource = (EditText)findViewById(R.id.editText_sourceWord);
