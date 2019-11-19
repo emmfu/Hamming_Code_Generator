@@ -80,7 +80,26 @@ public class MainActivity extends AppCompatActivity {
                             i++;
                         }
                     }
-
+                    // Calculate check bits
+                    int steps, sum;
+                    for(pow = 0, j = 0; j < hammLength; j++) {
+                        if(Math.pow(2, pow) == (j + 1)){
+                            steps = 0;
+                            sum = 0;
+                            for (int k = j; k < hammLength; k++) {
+                                if(steps <= j) {
+                                    sum += h[k];
+                                    steps++;
+                                } else {
+                                    k += j;
+                                    steps = 0;
+                                }
+                            }
+                            h[j] = sum % 2;
+                            pow++;
+                        }
+                    }
+                    // Show generated Hamming code
                     textViewHammingCode.setText(Arrays.toString(h));
                     textViewGeneratedMessage.setVisibility(View.VISIBLE);
                     textViewHammingCode.setVisibility(View.VISIBLE);
