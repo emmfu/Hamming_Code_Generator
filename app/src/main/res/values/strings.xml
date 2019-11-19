@@ -4,4 +4,5 @@
     <string name="enter_only_1_s_and_0_s">Enter only 1\'s and 0\'s</string>
     <string name="generated_hamming_code">Generated Hamming Code</string>
     <string name="generate_code">Generate Code</string>
+    <string name="actual_generated_codeword">Actual generated codeword.</string>
 </resources>
